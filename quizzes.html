@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning Platform</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <header class="container mt-4">
+        <h1>Welcome to the English Learning Platform</h1>
+    </header>
+    
+    <nav class="container mt-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link" href="#flashcards">Flashcards</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lessons">Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#progress">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quizzes">Quizzes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+        </ul>
+    </nav> -->
+
+    <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+  
+        <div class="profile">
+            <img src="img/guest.png" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Guest</a></h1>
+            <div class="social-links mt-3 text-center">
+              <!-- Replace social icons with login/logout link -->
+              <a href="#" id="loginLink" class="btn btn-primary mr-2"><i class="bx bxs-log-in"></i></a>
+              <span class="loginLinktext">Login</span>
+              <a href="#" id="signupLink" class="btn btn-secondary"><i class="bx bxs-user-plus"></i> </a>
+              <span class="loginLinktext">Sign Up</span>
+            </div>
+      
+            <!-- Login Form (initially hidden) -->
+            <form id="loginForm" style="display: none;">
+              <div class="mb-3">
+                <label for="loginUsername" class="form-label ">Username</label>
+                <input type="text" class="form-control" id="loginUsername" name="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+      
+            <!-- Sign Up Form (initially hidden) -->
+            <form id="signupForm" style="display: none;">
+              <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="signupUsername" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-secondary">Sign Up</button>
+            </form>
+          </div>
+  
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>  
+            <li><a href="flashcards.html" class="nav-link scrollto"><i class='bx bx-card'></i> <span>Flashcards</span></a></li>
+            <li><a href="lessons.html" class="nav-link scrollto"><i class='bx bxs-book-open'> </i><span>Lessons</span></a></li>
+            <li><a href="progress.html" class="nav-link scrollto"><i class='bx bx-bar-chart-alt'></i> <span>Progress</span></a></li>
+            <li><a href="quizzes.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Quizzes</span></a></li>
+            <li><a href="feedback.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Feedback</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <section id="quizzes" class="container mt-4">
+    <h2>Quizzes</h2>
+    <div id="quiz-container" class="row">
+        <!-- Quiz content will be dynamically added here -->
+    </div>
+</section>
+
+
+    <footer id="footer" class="mt-5 text-center">
+        <div class="container">
+            <div class="copyright">
+              <strong>Project Of Knightcore</strong>
+            </div>
+    </footer>
+    
+
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
