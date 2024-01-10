@@ -12,19 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- <header class="container mt-4">
-        <h1>Welcome to the English Learning Platform</h1>
-    </header>
-    
-    <nav class="container mt-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link" href="#flashcards">Flashcards</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lessons">Lessons</a></li>
-            <li class="nav-item"><a class="nav-link" href="#progress">Progress</a></li>
-            <li class="nav-item"><a class="nav-link" href="#quizzes">Quizzes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
-        </ul>
-    </nav> -->
 
     <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -38,37 +25,12 @@
             <h1 class="text-light"><a href="index.html">Guest</a></h1>
             <div class="social-links mt-3 text-center">
               <!-- Replace social icons with login/logout link -->
-              <a href="#" id="loginLink" class="btn btn-primary mr-2"><i class="bx bxs-log-in"></i></a>
+              <a href="login.html" id="loginLink" class="btn btn-primary mr-2"><i class="bx bxs-log-in"></i></a>
               <span class="loginLinktext">Login</span>
-              <a href="#" id="signupLink" class="btn btn-secondary"><i class="bx bxs-user-plus"></i> </a>
+              <a href="signup.html" id="signupLink" class="btn btn-secondary"><i class="bx bxs-user-plus"></i> </a>
               <span class="loginLinktext">Sign Up</span>
             </div>
       
-            <!-- Login Form (initially hidden) -->
-            <form id="loginForm" style="display: none;">
-              <div class="mb-3">
-                <label for="loginUsername" class="form-label ">Username</label>
-                <input type="text" class="form-control" id="loginUsername" name="username" required>
-              </div>
-              <div class="mb-3">
-                <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword" name="password" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-      
-            <!-- Sign Up Form (initially hidden) -->
-            <form id="signupForm" style="display: none;">
-              <div class="mb-3">
-                <label for="signupEmail" class="form-label">Email</label>
-                <input type="text" class="form-control" id="signupUsername" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="signupPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="signupPassword" name="password" required>
-              </div>
-              <button type="submit" class="btn btn-secondary">Sign Up</button>
-            </form>
           </div>
   
 
@@ -82,15 +44,28 @@
           <li><a href="feedback.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Feedback</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+
+      <footer id="footer" class="mt-5 text-center">
+        <div class="container">
+            <div class="copyright">
+              <strong>Project Of Knightcore</strong>
+            </div>
+    </footer>
+
     </div>
   </header><!-- End Header -->
 
  <!-- ======= Hero Section ======= -->
- <section id="hero" class="d-flex justify-content-center align-items-center">
+ <section id="hero" >
   <div class="hero-container" data-aos="fade-in">
-    <h1>Embark on Your Journey to Fluent English</h1>
-    <p>Start your language journey with <strong>FluentIQ</strong>.</p>
-    <p>From essential grammar to real-world conversations, our platform guides you to fluency step by step.</p> 
+    <div class="hero-ptext">
+      <h1>Embark on Your Journey to Fluent English</h1>
+      <p>Start your language journey with <strong>FluentIQ</strong>.</p>
+      <p>From essential grammar to real-world conversations, our platform guides you to fluency step by step.</p> 
+    </div>
+    <a href="login.html"><button type="button" class="btn">
+      Join Our Community
+    </button></a>
   </div>
 </section><!-- End Hero -->
 
@@ -125,12 +100,7 @@
 
 
 
-    <footer id="footer" class="mt-5 text-center">
-        <div class="container">
-            <div class="copyright">
-              <strong>Project Of Knightcore</strong>
-            </div>
-    </footer>
+
     
 
 
