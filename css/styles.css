@@ -5,6 +5,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+    /* overflow-y: scroll; */
   }
   
   a {
@@ -83,7 +84,7 @@ body {
   #header .profile img {
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 90px;
     border: 8px solid #2c2f3f;
   }
   
@@ -270,38 +271,47 @@ body {
 
 }
 
+/* #hero .hero-container .logo{
+  margin-right: 700px;
+}
+#hero .hero-container .logo img{
+  width: 500px;
+} */
+
 .hero-ptext{
-  margin: 0 400px;
+  margin: 0 350px;
 }
 
 #hero h1 {
-  margin: 0 0 50px 0;
-  font-size: 50px;
+  margin: 0 0 20px 0;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 46px;
   color: #fff;
 }
 
 #hero p {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 36px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero button {
   background-color: #149ddd;
   transition: 0.5s;
-  box-shadow: 0 0 20px #1f82b7;
+  box-shadow: 0 0 10px #1f82b7;
   color: #fff;
   padding: 15px 45px;
-  font-size: 30px;
-  border-radius: 20px;
+  font-size: 20px;
+  border-radius: 10px;
   margin-top: 50px;
   margin-left: 400px;
 }
          
-
+#hero button:hover{
+  background-color: #00b900;
+}
 
 #hero button:hover {
   background-position: right center; /* change the direction of the change here */
@@ -317,18 +327,89 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero-ptext{
+    margin: 0 50px;
+  }
+
+  #hero button {
+    margin-left: 200px;
+  }
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  /* #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
-  }
+  } */
 }  
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about{
+  padding: 60px 0;
+  margin-left: 300px;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p{
+  font-size: 20px;
+}
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.about .content p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* #about .about-image{
+  width: 250px;
+  height: 10%;
+} */
+
+@media (max-width: 768px){
+#about{
+  margin-left: 0;
+}
+}
+@media (min-width: 768px)and (max-width: 1024px){
+#about{
+  margin-left: 0;
+}
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
